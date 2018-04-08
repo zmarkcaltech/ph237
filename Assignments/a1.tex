@@ -1,15 +1,46 @@
 \documentclass[11pt]{article}
-\setlength{\oddsidemargin}{0in}
-\setlength{\topmargin}{0.0in}
-\setlength{\textwidth}{6.7in}
-\setlength{\textheight}{8.5in}
-%
+%\setlength{\oddsidemargin}{0in}
+%\setlength{\topmargin}{0.0in}
+%\setlength{\textwidth}{6.7in}
+%\setlength{\textheight}{8.5in}
+%\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ textwidth=6.5in
+ }
+\usepackage[utf8]{inputenc}
+%\usepackage{libertine}
+%\usepackage{libertinust1math}
+\usepackage[libertine,cmintegrals,cmbraces,vvarbb]{newtxmath}
+%\usepackage{newtxmath}
+%\usepackage[osf]{ebgaramond}
+\usepackage[T1]{fontenc}
+%\usepackage{palatino}
+\usepackage{microtype}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\textcolor{BlueViolet}{Gravitational Waves}}
+\fancyhead[LE,RO]{ph237: 2018}
+
+\fancyfoot[RE,LO]{\textcolor{Orange}{Caltech}}
+\fancyfoot[LE,RO]{\textcolor{Orange}{Physics, Math, and Astronomy}}
+
 %\input mydefs.tex
 \def\vev#1{\left\langle #1\right\rangle}
-%
+\def\hb{\hfill\break}
+
 \begin{document}
 %
-\centerline{\large\bf Physics 237 \hfill Assignment I \hfill  4/8/18}
+\centerline{\large\bf  \hfill Assignment I \hfill  4/8/18}
 
 \medskip
 \begin{description}
@@ -20,9 +51,9 @@
 
 \medskip
 
-\begin{description}
+\begin{enumerate}
 
-\item[{\bf 1} ]
+\item
 {\bf Fabry-Perot Cavity} \\
 There exists a Fabry-Perot cavity with a length of 4000\,m. The \emph{power} transmission, $T_I$, of the input mirror is 1\% and the transmission of the end mirror, $T_E$, is 10\,ppm. The cavity is illuminated from the input side with a 100\,W laser having a wavelength of 437\,nm.
 \begin{itemize}
@@ -30,7 +61,7 @@ There exists a Fabry-Perot cavity with a length of 4000\,m. The \emph{power} tra
 \item[\bf b)] Draw a diagram of the cavity, label each of the nodes, and write down the Adjacency Matrix, $A$, for the Fabry-Perot cavity. Solve for the System Matrix, $G$ using Mathematica or Python or otherwise, and show how one of the elements of $G$ can be used to find the solution in part a).
 \end{itemize}
 
-\item[{\bf 2} ]
+\item
 {\bf Frequency Response} \\
 In this problem we will compute the frequency response of a LIGO-like interferometer to gravitational waves. Assume that the results from above still hold.
 \begin{itemize}
@@ -40,5 +71,8 @@ In this problem we will compute the frequency response of a LIGO-like interferom
 Make a Bode plot of the \emph{transfer function} as in part b), but instead of the transmission of the FP cavity, use the anti-symmetric (detection) port as the readout.
 \end{itemize}
 
+\end{enumerate}
 
+\bigskip
+{\color{Sepia} \hrule}
 \end{document}
