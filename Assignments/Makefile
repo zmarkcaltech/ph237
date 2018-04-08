@@ -1,14 +1,8 @@
 #!/usr/bin/make -f
 .PHONY: all clean
-all: quiz1 quiz2 quiz3
+all: a1
 
-quiz1: %: %.tex
-	latexmk -pdf $@
-
-quiz2: %: %.tex
-	latexmk -pdf $@
-
-quiz3: %: %.tex
+a1: %: %.tex
 	latexmk -pdf $@
 
 
