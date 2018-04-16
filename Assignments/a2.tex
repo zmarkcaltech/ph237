@@ -26,6 +26,8 @@
 \usepackage{fancyhdr}
 \usepackage[colorlinks=true]{hyperref}
 
+\newcommand{\zach}[1]{\textcolor{ForestGreen}{#1}}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RE,LO]{\textcolor{BlueViolet}{Gravitational Waves}}
@@ -62,12 +64,16 @@ material of the dumbell bar is of negligible mass compared to $M$.
 \item[\bf a)] Using the quadrupole approximation, write down and
   expression for the strain at distances far away (relative to the
   wavelength, $\lambda$, of the radiation.
+  
+  \zach{Comments: By strain do you mean $h_+$ and $h_\times$. When I hear strain I usually think of the strain measured by a detector, i.e. $h=D^{ij}h_{ij}$, where $D^{ij}$ is the detector tensor.}
 
 \item[\bf b)] Considering realistic materials, compute the numerical
-  value for the strain at a distance of $\sim 3 \lambda$. For the bar
+  value for the strain at a distance of $\sim 3 \lambda$, \zach{roughly the closest distance in the wave zone, where we can apply the quadrupole approximation} . For the bar
   material you will have to choose a reasonable radius, such that the
   total stress in the bar is less than the yield stress of the
-  material.
+  material. 
+  
+  \zach{Comments: It seems as though the bar material doesn't directly effect the GW's produced, since we are neglecting it's mass. What prevents the students from using an arbitrarily large radius, which can support arbitrarily large masses? Are they trying to engineer the biggest realistic strain? Perhaps we should recommend a resource for looking up Young moduli and yield strains? I recommend ch 11 of Thorne and Blandford, which may also provide a good reminder about stresses and strains.}
 
 \end{itemize}
 
@@ -85,8 +91,7 @@ Gravitational Radiation from binary stars.
 \item[\bf b)] Assume that the total energy of the binary stars can
   be well estimated by Newtonian mechanics (since they are from each
   other and the velocities are non-relativistic). Compute
-  gravitational wave luminosity and, from that, plot the orbital
-  radius, $R(t)$.
+  gravitational wave luminosity \zach{ $\mathcal{L}$ as a function of orbital radius $R$.}  \zach{Then use energy balance $\frac{dE}{dt}=-\mathcal{L}$ to compute the slow time evolution (relative to an orbital period) of the orbital radius}.
 
 \end{itemize}
 
@@ -102,8 +107,12 @@ agreement with General Relativity to high accuracy.
 
 \item[\bf a)] Plot the periastron shift as a function of time using
   the data from Zenodo?
+  
+  \zach{Comment: Are we providing the data from Zenodo?}
 
 \item[\bf b)] Does this agree with GR?
+
+\zach{Comment: The Hulse-Taylor binary is an elliptical orbit, to answer this, doesn't one need to know how both orbital radius and eccentricity evolve with time?}
 
 \end{itemize}
 \end{enumerate}
