@@ -68,9 +68,12 @@ In this problem we will analyze the binary orbit, its precesion and decay in ord
 
 \item[\bf b)] Since the eccentric orbits in the Schwarzschild metric are not closed (as they are in Newtonian gravity), show that the orbit precesses, and that therefore, angle of the \emph{periastron} (point of closest approach) slowly varies with time. This is the calculation done by Einstein for the case of Mercury which gave him "palpations of the heart".
 
-\item[\bf c)] Using the relavent numbers for the Hulse-Taylor binary (PSR 1913+16), compute the same thing. Include relativistic corrections?
+\item[\bf c)] Using the relevant numbers for the Hulse-Taylor binary (PSR 1913+16), compute the same thing. Include relativistic corrections?
 
 \end{itemize}
+
+
+
 
 \clearpage
 \item
@@ -78,11 +81,13 @@ In this problem we will analyze the binary orbit, its precesion and decay in ord
 We would like to be able to generate a detectable amount of gravitational radiation on the earth so as to be able to test our detectors. Our approach will be to create a \emph{phased array} of rotating bars. By adjusting the phase of these rotating bars, we will be able to focus the energy into a narrow beam aimed at a detector on the other side of the earth.
 \begin{itemize}
 
-\item[\bf a)] Using the quadrupole formula and your results from hwk \#2, compute the gravitational radiation in the radiation zone.
+\item[\bf a)] Using the quadrupole formula and your results from hwk \#2, compute the gravitational radiation in the radiation zone for a single rotating bar.
 
 \item[\bf b)] Using (e.g. python or Mathematica) plot the angular distribution of the radiation ($h(\theta, \phi)$). You will need to make 1 plot for each of the 2 polarizations. Recall that the radiation, as projected on your detector, will depend only on the distance and the projection of the reduced moment of inertia tensor onto the detector coordinate system.
 
-\item[\bf c)] Now make a 2D array of $N \times N$ such bars. Compute and plot the angular distribution of the field
+\item[\bf c)] Now make a 2D array of $N \times N$ such bars. Compute and plot the angular distribution of the field.
+
+\item[\bf d)] Adjusting the phase of each of the bars individually, maximize the radiation in the vertical direction (i.e. normal to the array). Note that you can either analytically compute the desired phase shift for each bar, or tune them all numerically (e.g. using some global optimization algorithm). What is the half-width of the directed beam from the array? How much of the energy is contained within this beam and how much is directed to side-lobes?
 
 \end{itemize}
 
